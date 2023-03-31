@@ -34,6 +34,8 @@ public class HockeyManager {
     }
 
     private void AddNewForward(Team team, String name, int age) {
+
+        //konstruktory hracov su bez "specifickej" vlastnosti za predpokladu ze pocet golov, vyhier a hitov sa pocita v danom tíme odznova, t.j. 0.
         Forward forward = new Forward(name, age);
         team.getPlayers().add(forward);
         System.out.println("Player " + forward.getName() + " was added to the team " + team.getName());

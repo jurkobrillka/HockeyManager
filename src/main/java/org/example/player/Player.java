@@ -2,6 +2,8 @@ package org.example.player;
 
 
 public abstract class Player {
+
+    //Zvolil som abstraktnu triedu pre predpoklad ze kazdy novy hrac musi byt nejaky post.
     private String name;
     private int age;
 
@@ -15,15 +17,9 @@ public abstract class Player {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 }
